@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div *{
+			display: block;
+			padding: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Configuración</h1>
+	<div>
+		<label>Duracion de Refrescamiento: </label>
+		<input id="tiempo_numero" name="tiempo" type="number" step="100" min="100" max="10000" value="2000" />
+		<input id="tiempo_rango" min="100" max="10000" step="100" type="range" name="rango">
+		<small>Entre 0.1 Segundos a 10 Segundos</small>
+	</div>
+	<div>
+		<h2>Pestañas Activas</h2>
+		<ul id="lista">
+			
+		</ul>
+	</div>
+	<script type="text/javascript" hash="sha256-NRsGrftJCs8keJRnPp/jKDDjxt30jO+Apmk17WlNYY8=" src="config.js">
+		
+
+	</script>
+</body>
+</html>

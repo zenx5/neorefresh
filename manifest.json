@@ -1,0 +1,26 @@
+{
+	"manifest_version":2,
+	"name": "Neo Re fresh",
+	"description":"Autorefresh para Figure Eight by Octavio Martinez",
+	"version": "2.0",
+	"icons":{
+		"16":"reload16.png",
+		"48":"reload.png"
+	},
+	"background":{
+		"scripts":["background.js"],
+		"persistents":false
+	},
+	"options_ui":{
+		"page":"config.html",
+		"open_in_tab":true
+	},
+	"content_scripts":[{
+		"matches":["https://tasks.figure-eight.work/channels/*"],
+		"js":["inyex.js"],
+		"run_at":"document_end"
+
+	}],
+	"permissions":["tabs","storage"]
+
+}
